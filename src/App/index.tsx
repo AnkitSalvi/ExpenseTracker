@@ -47,14 +47,16 @@ const App: FC = () => {
       <Header/>
       <CssBaseline />
       <Container maxWidth='lg' className={classes.root}>
+
+        <Switch>
+          <Route exact path='/' component={Home} />
+        </Switch>
   
         <Switch>
           <Route exact path='/graphs' component={Graph} />
         </Switch>
 
-        <Switch>
-          <Route exact path='/expense-tracker' component={Home} />
-        </Switch>
+
 
         {/* <BottomAppBar /> */}
       </Container>

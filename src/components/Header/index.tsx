@@ -15,7 +15,7 @@ const Header: FC = () => {
   return (
       <div className={classes.root}>
         <div className={classes.text}>
-        <Link to='/expense-tracker' className={classes.link}>
+        <Link to='/' className={classes.link}>
                 Home
         </Link>
         </div>
