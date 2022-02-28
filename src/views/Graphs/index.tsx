@@ -12,7 +12,7 @@ const Graph: FC = () => {
   
 
   return (
-      <>
+      <div className={classes.mainContainer}>
       {graphdata.length>1?
         <div className={classes.container}>
             <div className={classes.text}>Expenses Per Category</div>
@@ -22,7 +22,7 @@ const Graph: FC = () => {
         </div>
         : <div className={classes.boldText}>Add More Data</div>
       }
-      </>
+      </div>
 
   )
 }

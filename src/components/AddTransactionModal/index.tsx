@@ -74,6 +74,8 @@ const AddTransactionModal: FC<Props> = ({ isOpen, close }) => {
               placeholder='Enter description...'
               variant='outlined'
               margin='normal' 
+              error={errors.amount ? true : false}
+              helperText={errors.amount ? 'Field is required' : 'If the dropdown is empty add categories from category section'}
             >
 
                 {category.map((item, id)=>{

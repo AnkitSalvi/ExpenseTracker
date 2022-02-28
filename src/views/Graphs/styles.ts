@@ -12,12 +12,16 @@ const useStyles = makeStyles((theme) => ({
     flexDirection:'column',
     justifyContent:'center',
     height: '1000px',
-    paddingTop:'8rem'
+    paddingTop:'8rem',
+    width:'80%'
   },
   boldText:{
-      fontSize:'4rem',
-      marginLeft:'7.7rem',
-      marginTop:'4rem'
+      fontSize:'3rem',
+      marginTop:'8rem'
+  },
+  mainContainer:{
+    display: 'flex',
+    justifyContent:'center'
   }
 }))
 
