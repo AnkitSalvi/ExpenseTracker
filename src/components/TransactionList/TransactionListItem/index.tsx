@@ -1,8 +1,8 @@
 import React, { FC } from 'react'
 import clsx from 'clsx'
-/* Styles */
+
 import useStyles from './styles'
-/* Components */
+
 import ListItem from '@material-ui/core/ListItem'
 import Paper from '@material-ui/core/Paper'
 

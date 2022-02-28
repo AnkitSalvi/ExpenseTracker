@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-/* Components */
+
 import Balance from '../../components/Balance/index'
 import IncomeExpenses from '../../components/IncomeExpenses/index'
 import TransactionList from '../../components/TransactionList/index'

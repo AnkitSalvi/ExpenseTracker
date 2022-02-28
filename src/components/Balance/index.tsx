@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-/* Components */
+
 import Typography from '@material-ui/core/Typography'
 import { useStoreState } from '../../store'
 

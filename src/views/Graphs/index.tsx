@@ -1,6 +1,6 @@
-import React, { FC, useState } from 'react'
+import React, { FC } from 'react'
 import useStyles from './styles'
-/* Components */
+
 import BarChart from '../../components/BarChart/index';
 import PieChart from '../../components/PieChart/index'
 import { useStoreState } from '../../store'

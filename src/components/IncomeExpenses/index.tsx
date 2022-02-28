@@ -1,12 +1,12 @@
 import React, { FC } from 'react'
-/* Redux */
+
 import { useStoreState } from '../../store'
-/* Styles */
+
 import useStyles from './styles'
-/* Components */
+
 import Typography from '@material-ui/core/Typography'
 import Paper from '@material-ui/core/Paper'
-import Divider from '@material-ui/core/Divider'
+
 
 const IncomeExpenses: FC = () => {
   const classes = useStyles()

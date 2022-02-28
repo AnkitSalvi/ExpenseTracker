@@ -1,12 +1,11 @@
 import React, { FC } from 'react'
-/* Redux */
+
 import { useStoreActions, useStoreState } from '../../store'
-/* Styles */
+
 import useStyles from './styles'
-import { NewTransaction } from '../../models'
+
 import { useForm } from 'react-hook-form'
-import { DateTime } from 'luxon'
-/* Components */
+
 import Button from '@material-ui/core/Button'
 import TextField from '@material-ui/core/TextField'
 import Dialog from '@material-ui/core/Dialog'

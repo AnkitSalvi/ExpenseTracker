@@ -19,8 +19,7 @@ const App: FC = () => {
   const { saveTransactions, loadTransactions, saveCategories, loadCategories, saveGraphData, loadGraphData } = useStoreActions(
     (actions) => actions.transactions
   )
-
-  /* Before refresh/closing tab save data to localStorage */
+  
   window.addEventListener('beforeunload', (e) => {
     e.preventDefault()
     saveTransactions()
@@ -29,7 +28,6 @@ const App: FC = () => {
   })
 
   useEffect(() => {
-    /* Load transactions from localStorage */
     loadTransactions()
   }, [loadTransactions])
 
@@ -43,7 +41,6 @@ const App: FC = () => {
 
   return (
     <>
-      {/* Material-UI css rest */}
       <Header/>
       <CssBaseline />
       <Container maxWidth='lg' className={classes.root}>
@@ -55,10 +52,6 @@ const App: FC = () => {
         <Switch>
           <Route exact path='/graphs' component={Graph} />
         </Switch>
-
-
-
-        {/* <BottomAppBar /> */}
       </Container>
     </>
   )

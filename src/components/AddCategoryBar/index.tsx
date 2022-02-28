@@ -1,8 +1,7 @@
 import React, { FC, useState } from 'react'
-// import { NavLink } from 'react-router-dom'
-/* Styles */
+
 import useStyles from './styles'
-/* Components */
+
 import AddCategoryModal from '../AddCategoryModal'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'

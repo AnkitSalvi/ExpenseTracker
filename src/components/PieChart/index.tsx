@@ -1,11 +1,8 @@
 import * as React from "react";
 import {
-  ArgumentAxis,
-  ValueAxis,
   Chart,
   PieSeries
 } from "@devexpress/dx-react-chart-material-ui";
-import { ValueScale } from "@devexpress/dx-react-chart";
 import Paper from '@material-ui/core/Paper'
 import { useStoreState } from '../../store'
 

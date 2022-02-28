@@ -1,19 +1,18 @@
 import React, { FC } from 'react'
-/* Redux */
+
 import { useStoreActions, useStoreState } from '../../store'
-/* Styles */
+
 import useStyles from './styles'
 import { NewTransaction } from '../../models'
-import { useForm, Controller } from 'react-hook-form'
+import { useForm } from 'react-hook-form'
 import { DateTime } from 'luxon'
-/* Components */
+
 import Button from '@material-ui/core/Button'
 import TextField from '@material-ui/core/TextField'
 import Dialog from '@material-ui/core/Dialog'
 import DialogActions from '@material-ui/core/DialogActions'
 import DialogContent from '@material-ui/core/DialogContent'
 import DialogTitle from '@material-ui/core/DialogTitle'
-import Select from '@material-ui/core/Select'
 import MenuItem from '@material-ui/core/MenuItem'
 interface Inputs {
   description: string,
@@ -27,7 +26,7 @@ interface Props {
 
 const AddTransactionModal: FC<Props> = ({ isOpen, close }) => {
   const classes = useStyles()
-  const { register, handleSubmit, errors, reset, control } = useForm<Inputs>()
+  const { register, handleSubmit, errors, reset } = useForm<Inputs>()
   const addTransaction = useStoreActions((actions) => actions.transactions.addTransaction)
   const category = useStoreState((state) => state.transactions.category)
 
@@ -63,7 +62,7 @@ const AddTransactionModal: FC<Props> = ({ isOpen, close }) => {
 
         <form noValidate onSubmit={handleSubmit(onSubmit)}>
           <DialogContent classes={{ root: classes.dialogContent }}>
-            {/* Description Field */}
+
             <TextField
               select
               fullWidth={true}
@@ -84,7 +83,7 @@ const AddTransactionModal: FC<Props> = ({ isOpen, close }) => {
                 }
             </TextField>
 
-            {/* Amount Field */}
+
             <TextField
               fullWidth={true}
               InputLabelProps={{

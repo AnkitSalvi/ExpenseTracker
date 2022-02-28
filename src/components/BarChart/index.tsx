@@ -4,7 +4,6 @@ import {
   ValueAxis,
   BarSeries,
   Chart,
-  PieSeries
 } from "@devexpress/dx-react-chart-material-ui";
 import { ValueScale } from "@devexpress/dx-react-chart";
 import Paper from '@material-ui/core/Paper'

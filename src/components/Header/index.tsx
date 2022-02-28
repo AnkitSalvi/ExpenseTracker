@@ -1,9 +1,8 @@
 import React, { FC } from 'react'
 import { Link } from 'react-router-dom'
-/* Styles */
+
 import useStyles from './styles'
-/* Components */
-import Typography from '@material-ui/core/Typography'
+
 
 
 

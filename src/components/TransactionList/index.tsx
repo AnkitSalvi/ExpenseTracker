@@ -1,9 +1,9 @@
 import React, { FC } from 'react'
-/* Redux */
+
 import { useStoreState } from '../../store'
-/* Styles */
+
 import useStyles from './styles'
-/* Components */
+
 import Typography from '@material-ui/core/Typography'
 import Divider from '@material-ui/core/Divider'
 import List from '@material-ui/core/List'
